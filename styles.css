@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.product-card{
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    max-width: 600px;     
+    max-height: 450px;   
+    overflow: hidden;   
+}
+
+.image-left{
+    width: 50%;
+}
+
+.image-left img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+.product-details-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.product-name{
+    font-weight: 700;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    color: hsl(228, 12%, 48%);
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.product-details-right h2{
+    font-weight: 700;
+    font-family: "Fraunces";
+    font-size: xx-large;
+    margin-bottom: 2rem;
+}
+
+.product-description{
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.3;
+    width: 78%;
+}
+
+.product-price{
+    margin: 1.5rem 0;
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
+.actual-price{
+    color: green;
+    font-weight: 700;
+    font-size: xx-large;
+    font-family: "Fraunces";
+}
+
+.previous-price{
+    margin-left: 0.5rem;
+    color: hsl(228, 12%, 48%); ;
+    font-family: "Fraunces";
+    margin-top: 0.5rem;
+    text-decoration: line-through;
+}
+
+.btn{
+    background-color: green;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 14px;
+    width: 80%;
+    height: 50%;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: larger;
+}
+.btn img{
+    margin-right: 0.5rem;
+}
+.btn:hover{
+    background-color: darkgreen;
+    cursor: pointer;
+}
